@@ -20,7 +20,7 @@
     <script type="text/javascript" src="//use.typekit.net/xnk7rre.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
-  <body>
+  <body class=" tags_speaker">
 
 
     <div class="top">
@@ -107,11 +107,21 @@
       <div class="container">
         <div class="main_column">
          <style type='text/css'>
-.stage {
-  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x340&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CChina+Hangzhou&visual_refresh=1") !important;
+.tags_speaker .stage {
+  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x340&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CChina+Hangzhou&visual_refresh=1");
   background-repeat: repeat;
+  cursor: pointer;
 }
-</style><div itemscope='' itemtype='http://schema.org/Person'>
+</style><script>
+(function() {
+var target = document.querySelector('.tags_speaker .stage')
+if (target) target.onclick = function(e) {
+  if (e.target == target) {
+    window.open('https://www.google.com/maps/preview#!q=China+Hangzhou')
+  }
+}
+})();
+</script><div itemscope='' itemtype='http://schema.org/Person'>
   <header class='scrollTarget'>
     <h3><a href='/speakers/charlie-crane-game-server-development-in-nodejs.html'><span itemprop='name'>Charlie Crane</span>: Game server development in node.js</a></h3>
   </header>
@@ -119,7 +129,7 @@
   <section class='description'>
     
     <a class='speaker_avatar' href='https://twitter.com/xiecc' target='_blank'>
-      <img height='200' src='/speakers/images/charlie-crane.png' class='speaker' width='200' itemprop='image' alt='Charlie Crane' />
+      <img itemprop='image' class='speaker' width='200' alt='Charlie Crane' height='200' src='/speakers/images/charlie-crane.png' />
     </a>
     
     <div>
@@ -129,9 +139,9 @@
     <ul class='info'>
       <li>» <a href='https://www.google.com/maps/preview#!q=China Hangzhou' target='_blank'>China Hangzhou</a></li>
       
-      <li>» <a href='https://github.com/xiecc' itemprop='url' target='_blank'>Github</a></li>
-      <li>» <a href='https://twitter.com/xiecc' itemprop='url' target='_blank'>Twitter</a></li>
-      <li>» <a href='https://plus.google.com/115008636064161269273/posts' itemprop='url' target='_blank'>Google+</a></li>
+      <li>» <a itemprop='url' href='https://github.com/xiecc' target='_blank'>Github</a></li>
+      <li>» <a itemprop='url' href='https://twitter.com/xiecc' target='_blank'>Twitter</a></li>
+      <li>» <a itemprop='url' href='https://plus.google.com/115008636064161269273/posts' target='_blank'>Google+</a></li>
     </ul>
   </section>
 </div>

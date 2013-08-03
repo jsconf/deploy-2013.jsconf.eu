@@ -20,7 +20,7 @@
     <script type="text/javascript" src="//use.typekit.net/xnk7rre.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
-  <body>
+  <body class=" tags_speaker">
 
 
     <div class="top">
@@ -107,11 +107,21 @@
       <div class="container">
         <div class="main_column">
          <style type='text/css'>
-.stage {
-  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x340&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CUS%2C+Richland%2C+WA&visual_refresh=1") !important;
+.tags_speaker .stage {
+  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x340&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CUS%2C+Richland%2C+WA&visual_refresh=1");
   background-repeat: repeat;
+  cursor: pointer;
 }
-</style><div itemscope='' itemtype='http://schema.org/Person'>
+</style><script>
+(function() {
+var target = document.querySelector('.tags_speaker .stage')
+if (target) target.onclick = function(e) {
+  if (e.target == target) {
+    window.open('https://www.google.com/maps/preview#!q=US%2C+Richland%2C+WA')
+  }
+}
+})();
+</script><div itemscope='' itemtype='http://schema.org/Person'>
   <header class='scrollTarget'>
     <h3><a href='/speakers/adam-baldwin-security-first.html'><span itemprop='name'>Adam Baldwin</span>: Security First</a></h3>
   </header>
@@ -119,7 +129,7 @@
   <section class='description'>
     
     <a class='speaker_avatar' href='http://blog.liftsecurity.io' target='_blank'>
-      <img height='200' src='/speakers/images/adam-baldwin.jpg' class='speaker' width='200' itemprop='image' alt='Adam Baldwin' />
+      <img itemprop='image' class='speaker' width='200' alt='Adam Baldwin' height='200' src='/speakers/images/adam-baldwin.jpg' />
     </a>
     
     <div>
@@ -130,9 +140,9 @@
 
     <ul class='info'>
       <li>» <a href='https://www.google.com/maps/preview#!q=US, Richland, WA' target='_blank'>US, Richland, WA</a></li>
-      <li>» <a href='http://blog.liftsecurity.io' itemprop='url' target='_blank'>Website</a></li>
+      <li>» <a itemprop='url' href='http://blog.liftsecurity.io' target='_blank'>Website</a></li>
       
-      <li>» <a href='https://twitter.com/adam_baldwin' itemprop='url' target='_blank'>Twitter</a></li>
+      <li>» <a itemprop='url' href='https://twitter.com/adam_baldwin' target='_blank'>Twitter</a></li>
       
     </ul>
   </section>

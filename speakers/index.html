@@ -20,7 +20,7 @@
     <script type="text/javascript" src="//use.typekit.net/xnk7rre.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
-  <body class="background_speakers">
+  <body class="background_speakers tags_">
 
 
     <div class="top">
@@ -113,11 +113,21 @@
 }
 </style><h1>Speakers</h1><p><strong>We're just getting started</strong> announcing our speakers – check back often.</p><article>
     <style type='text/css'>
-.stage {
-  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x340&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CMountain+View%2C+CA%2C+USA&visual_refresh=1") !important;
+.tags_speaker .stage {
+  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x340&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CMountain+View%2C+CA%2C+USA&visual_refresh=1");
   background-repeat: repeat;
+  cursor: pointer;
 }
-</style><div itemscope='' itemtype='http://schema.org/Person'>
+</style><script>
+(function() {
+var target = document.querySelector('.tags_speaker .stage')
+if (target) target.onclick = function(e) {
+  if (e.target == target) {
+    window.open('https://www.google.com/maps/preview#!q=Mountain+View%2C+CA%2C+USA')
+  }
+}
+})();
+</script><div itemscope='' itemtype='http://schema.org/Person'>
   <header class='scrollTarget'>
     <h3><a href='/speakers/loreena-lee-and-john-mccutchan-effectively-managing-memory-at-gmail-scale.html'><span itemprop='name'>Loreena Lee and John McCutchan</span>: Effectively Managing Memory At Gmail Scale</a></h3>
   </header>
@@ -126,10 +136,10 @@
 
     <div class='speaker_avatar'>
       <a href='https://plus.google.com/+LoreenaLee' target='_blank'>
-        <img height='200' class='speaker' src='/speakers/images/loreena-lee.jpg' width='200' itemprop='image' alt='Loreena Lee' />
+        <img itemprop='image' class='speaker' width='200' alt='Loreena Lee' height='200' src='/speakers/images/loreena-lee.jpg' />
       </a>
       <a href='https://plus.google.com/+JohnMcCutchan' target='_blank'>
-        <img height='200' class='speaker' src='/speakers/images/john-mccutchan.png' width='200' itemprop='image' alt='John McCutchan' />
+        <img itemprop='image' class='speaker' width='200' alt='John McCutchan' height='200' src='/speakers/images/john-mccutchan.png' />
       </a>
     </div>
     <div>
@@ -137,19 +147,29 @@
     </div>
 
     <ul class='info'>
-      <li>» <a href='https://www.google.com/maps/preview#!q=Mountain View, CA, USA' target='_blank'>Mountain View, CA, USA</a></li>
-      <li>» <a href='https://plus.google.com/+LoreenaLee' itemprop='url' target='_blank'>Loreena on Google+</a></li>
-      <li>» <a href='https://plus.google.com/+JohnMcCutchan' itemprop='url' target='_blank'>John on Google+</a></li>
+      <li>» <a href='https://www.google.com/maps/preview#!q=Mountain+View%2C+CA%2C+USA' target='_blank'>Mountain View, CA, USA</a></li>
+      <li>» <a itemprop='url' href='https://plus.google.com/+LoreenaLee' target='_blank'>Loreena on Google+</a></li>
+      <li>» <a itemprop='url' href='https://plus.google.com/+JohnMcCutchan' target='_blank'>John on Google+</a></li>
     </ul>
   </section>
 </div>
   </article><article>
     <style type='text/css'>
-.stage {
-  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x340&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CChina+Hangzhou&visual_refresh=1") !important;
+.tags_speaker .stage {
+  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x340&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CChina+Hangzhou&visual_refresh=1");
   background-repeat: repeat;
+  cursor: pointer;
 }
-</style><div itemscope='' itemtype='http://schema.org/Person'>
+</style><script>
+(function() {
+var target = document.querySelector('.tags_speaker .stage')
+if (target) target.onclick = function(e) {
+  if (e.target == target) {
+    window.open('https://www.google.com/maps/preview#!q=China+Hangzhou')
+  }
+}
+})();
+</script><div itemscope='' itemtype='http://schema.org/Person'>
   <header class='scrollTarget'>
     <h3><a href='/speakers/charlie-crane-game-server-development-in-nodejs.html'><span itemprop='name'>Charlie Crane</span>: Game server development in node.js</a></h3>
   </header>
@@ -157,7 +177,7 @@
   <section class='description'>
     
     <a class='speaker_avatar' href='https://twitter.com/xiecc' target='_blank'>
-      <img height='200' src='/speakers/images/charlie-crane.png' class='speaker' width='200' itemprop='image' alt='Charlie Crane' />
+      <img itemprop='image' class='speaker' width='200' alt='Charlie Crane' height='200' src='/speakers/images/charlie-crane.png' />
     </a>
     
     <div>
@@ -167,19 +187,29 @@
     <ul class='info'>
       <li>» <a href='https://www.google.com/maps/preview#!q=China Hangzhou' target='_blank'>China Hangzhou</a></li>
       
-      <li>» <a href='https://github.com/xiecc' itemprop='url' target='_blank'>Github</a></li>
-      <li>» <a href='https://twitter.com/xiecc' itemprop='url' target='_blank'>Twitter</a></li>
-      <li>» <a href='https://plus.google.com/115008636064161269273/posts' itemprop='url' target='_blank'>Google+</a></li>
+      <li>» <a itemprop='url' href='https://github.com/xiecc' target='_blank'>Github</a></li>
+      <li>» <a itemprop='url' href='https://twitter.com/xiecc' target='_blank'>Twitter</a></li>
+      <li>» <a itemprop='url' href='https://plus.google.com/115008636064161269273/posts' target='_blank'>Google+</a></li>
     </ul>
   </section>
 </div>
   </article><article>
     <style type='text/css'>
-.stage {
-  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x340&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CUS%2C+Richland%2C+WA&visual_refresh=1") !important;
+.tags_speaker .stage {
+  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x340&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CUS%2C+Richland%2C+WA&visual_refresh=1");
   background-repeat: repeat;
+  cursor: pointer;
 }
-</style><div itemscope='' itemtype='http://schema.org/Person'>
+</style><script>
+(function() {
+var target = document.querySelector('.tags_speaker .stage')
+if (target) target.onclick = function(e) {
+  if (e.target == target) {
+    window.open('https://www.google.com/maps/preview#!q=US%2C+Richland%2C+WA')
+  }
+}
+})();
+</script><div itemscope='' itemtype='http://schema.org/Person'>
   <header class='scrollTarget'>
     <h3><a href='/speakers/adam-baldwin-security-first.html'><span itemprop='name'>Adam Baldwin</span>: Security First</a></h3>
   </header>
@@ -187,7 +217,7 @@
   <section class='description'>
     
     <a class='speaker_avatar' href='http://blog.liftsecurity.io' target='_blank'>
-      <img height='200' src='/speakers/images/adam-baldwin.jpg' class='speaker' width='200' itemprop='image' alt='Adam Baldwin' />
+      <img itemprop='image' class='speaker' width='200' alt='Adam Baldwin' height='200' src='/speakers/images/adam-baldwin.jpg' />
     </a>
     
     <div>
@@ -198,9 +228,9 @@
 
     <ul class='info'>
       <li>» <a href='https://www.google.com/maps/preview#!q=US, Richland, WA' target='_blank'>US, Richland, WA</a></li>
-      <li>» <a href='http://blog.liftsecurity.io' itemprop='url' target='_blank'>Website</a></li>
+      <li>» <a itemprop='url' href='http://blog.liftsecurity.io' target='_blank'>Website</a></li>
       
-      <li>» <a href='https://twitter.com/adam_baldwin' itemprop='url' target='_blank'>Twitter</a></li>
+      <li>» <a itemprop='url' href='https://twitter.com/adam_baldwin' target='_blank'>Twitter</a></li>
       
     </ul>
   </section>
@@ -212,11 +242,22 @@
 
 
 <style type='text/css'>
-.stage {
-  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x340&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CPhiladelphia%2C+PA%2C+USA&visual_refresh=1") !important;
+.tags_speaker .stage {
+  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x340&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CPhiladelphia%2C+PA%2C+USA&visual_refresh=1");
   background-repeat: repeat;
+  cursor: pointer;
 }
 </style>
+<script>
+(function() {
+var target = document.querySelector('.tags_speaker .stage')
+if (target) target.onclick = function(e) {
+  if (e.target == target) {
+    window.open('https://www.google.com/maps/preview#!q=Philadelphia%2C+PA%2C+USA')
+  }
+}
+})();
+</script>
 
 
 <div itemscope='' itemtype='http://schema.org/Person'>
@@ -227,7 +268,7 @@
   <section class='description'>
     
     <a class='speaker_avatar' href='http://thewebivore.com' target='_blank'>
-      <img height='301.507537688442' src='/speakers/images/pam-selle.jpg' class='speaker' width='200' itemprop='image' alt='Pam Selle' />
+      <img itemprop='image' class='speaker' width='200' alt='Pam Selle' height='301.507537688442' src='/speakers/images/pam-selle.jpg' />
     </a>
     
     <div>
@@ -238,10 +279,10 @@
 
     <ul class='info'>
       <li>» <a href='https://www.google.com/maps/preview#!q=Philadelphia, PA, USA' target='_blank'>Philadelphia, PA, USA</a></li>
-      <li>» <a href='http://thewebivore.com' itemprop='url' target='_blank'>Website</a></li>
-      <li>» <a href='http://github.com/pselle' itemprop='url' target='_blank'>Github</a></li>
-      <li>» <a href='https://twitter.com/pamasaur' itemprop='url' target='_blank'>Twitter</a></li>
-      <li>» <a href='http://plus.google.com/110556391914416278785/' itemprop='url' target='_blank'>Google+</a></li>
+      <li>» <a itemprop='url' href='http://thewebivore.com' target='_blank'>Website</a></li>
+      <li>» <a itemprop='url' href='http://github.com/pselle' target='_blank'>Github</a></li>
+      <li>» <a itemprop='url' href='https://twitter.com/pamasaur' target='_blank'>Twitter</a></li>
+      <li>» <a itemprop='url' href='http://plus.google.com/110556391914416278785/' target='_blank'>Google+</a></li>
     </ul>
   </section>
 </div>
@@ -249,11 +290,21 @@
 
   </article><article>
     <style type='text/css'>
-.stage {
-  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x340&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CGermany%2FHamburg&visual_refresh=1") !important;
+.tags_speaker .stage {
+  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x340&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CGermany%2FHamburg&visual_refresh=1");
   background-repeat: repeat;
+  cursor: pointer;
 }
-</style><div itemscope='' itemtype='http://schema.org/Person'>
+</style><script>
+(function() {
+var target = document.querySelector('.tags_speaker .stage')
+if (target) target.onclick = function(e) {
+  if (e.target == target) {
+    window.open('https://www.google.com/maps/preview#!q=Germany%2FHamburg')
+  }
+}
+})();
+</script><div itemscope='' itemtype='http://schema.org/Person'>
   <header class='scrollTarget'>
     <h3><a href='/speakers/jan-krutisch-javascript-patterns-for-contemporary-dance-music.html'><span itemprop='name'>Jan Krutisch</span>: JavaScript Patterns For Contemporary Dance Music</a></h3>
   </header>
@@ -261,7 +312,7 @@
   <section class='description'>
     
     <a class='speaker_avatar' href='http://jan.krutisch.de/' target='_blank'>
-      <img height='299' src='/speakers/images/jan-krutisch.jpg' class='speaker' width='200' itemprop='image' alt='Jan Krutisch' />
+      <img itemprop='image' class='speaker' width='200' alt='Jan Krutisch' height='299' src='/speakers/images/jan-krutisch.jpg' />
     </a>
     
     <div>
@@ -270,10 +321,10 @@
 
     <ul class='info'>
       <li>» <a href='https://www.google.com/maps/preview#!q=Germany/Hamburg' target='_blank'>Germany/Hamburg</a></li>
-      <li>» <a href='http://jan.krutisch.de/' itemprop='url' target='_blank'>Website</a></li>
-      <li>» <a href='http://github.com/halfbyte' itemprop='url' target='_blank'>Github</a></li>
-      <li>» <a href='https://twitter.com/halfbyte' itemprop='url' target='_blank'>Twitter</a></li>
-      <li>» <a href='https://plus.google.com/104536966293480747795/posts' itemprop='url' target='_blank'>Google+</a></li>
+      <li>» <a itemprop='url' href='http://jan.krutisch.de/' target='_blank'>Website</a></li>
+      <li>» <a itemprop='url' href='http://github.com/halfbyte' target='_blank'>Github</a></li>
+      <li>» <a itemprop='url' href='https://twitter.com/halfbyte' target='_blank'>Twitter</a></li>
+      <li>» <a itemprop='url' href='https://plus.google.com/104536966293480747795/posts' target='_blank'>Google+</a></li>
     </ul>
   </section>
 </div>
@@ -282,11 +333,22 @@
 
 
 <style type='text/css'>
-.stage {
-  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x340&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CMunich&visual_refresh=1") !important;
+.tags_speaker .stage {
+  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x340&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CMunich&visual_refresh=1");
   background-repeat: repeat;
+  cursor: pointer;
 }
 </style>
+<script>
+(function() {
+var target = document.querySelector('.tags_speaker .stage')
+if (target) target.onclick = function(e) {
+  if (e.target == target) {
+    window.open('https://www.google.com/maps/preview#!q=Munich')
+  }
+}
+})();
+</script>
 
 
 <div itemscope='' itemtype='http://schema.org/Person'>
@@ -297,7 +359,7 @@
   <section class='description'>
     
     <span class='speaker_avatar'>
-      <img height='247.368421052632' src='/speakers/images/hannes-payer.png' class='speaker' width='200' itemprop='image' alt='Hannes Payer' />
+      <img itemprop='image' class='speaker' width='200' alt='Hannes Payer' height='247.368421052632' src='/speakers/images/hannes-payer.png' />
     </span>
     
     <div>
@@ -322,11 +384,22 @@
 
 
 <style type='text/css'>
-.stage {
-  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x340&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CUSA%2C+Nashville&visual_refresh=1") !important;
+.tags_speaker .stage {
+  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x340&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CUSA%2C+Nashville&visual_refresh=1");
   background-repeat: repeat;
+  cursor: pointer;
 }
 </style>
+<script>
+(function() {
+var target = document.querySelector('.tags_speaker .stage')
+if (target) target.onclick = function(e) {
+  if (e.target == target) {
+    window.open('https://www.google.com/maps/preview#!q=USA%2C+Nashville')
+  }
+}
+})();
+</script>
 
 
 <div itemscope='' itemtype='http://schema.org/Person'>
@@ -337,7 +410,7 @@
   <section class='description'>
     
     <a class='speaker_avatar' href='http://marthakelly.github.io/' target='_blank'>
-      <img height='200' src='/speakers/images/martha-girdler.jpg' class='speaker' width='200' itemprop='image' alt='Martha Girdler' />
+      <img itemprop='image' class='speaker' width='200' alt='Martha Girdler' height='200' src='/speakers/images/martha-girdler.jpg' />
     </a>
     
     <div>
@@ -346,9 +419,9 @@
 
     <ul class='info'>
       <li>» <a href='https://www.google.com/maps/preview#!q=USA, Nashville' target='_blank'>USA, Nashville</a></li>
-      <li>» <a href='http://marthakelly.github.io/' itemprop='url' target='_blank'>Website</a></li>
-      <li>» <a href='https://github.com/marthakelly' itemprop='url' target='_blank'>Github</a></li>
-      <li>» <a href='https://twitter.com/marthakelly' itemprop='url' target='_blank'>Twitter</a></li>
+      <li>» <a itemprop='url' href='http://marthakelly.github.io/' target='_blank'>Website</a></li>
+      <li>» <a itemprop='url' href='https://github.com/marthakelly' target='_blank'>Github</a></li>
+      <li>» <a itemprop='url' href='https://twitter.com/marthakelly' target='_blank'>Twitter</a></li>
       
     </ul>
   </section>
@@ -362,11 +435,22 @@
 
 
 <style type='text/css'>
-.stage {
-  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x340&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CPoland+%2F+Pozna%C5%84&visual_refresh=1") !important;
+.tags_speaker .stage {
+  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x340&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CPoland+%2F+Pozna%C5%84&visual_refresh=1");
   background-repeat: repeat;
+  cursor: pointer;
 }
 </style>
+<script>
+(function() {
+var target = document.querySelector('.tags_speaker .stage')
+if (target) target.onclick = function(e) {
+  if (e.target == target) {
+    window.open('https://www.google.com/maps/preview#!q=Poland+%2F+Pozna%C5%84')
+  }
+}
+})();
+</script>
 
 
 <div itemscope='' itemtype='http://schema.org/Person'>
@@ -377,7 +461,7 @@
   <section class='description'>
     
     <a class='speaker_avatar' href='https://twitter.com/bartaz' target='_blank'>
-      <img height='200' src='/speakers/images/bartek-szopka.jpeg' class='speaker' width='200' itemprop='image' alt='Bartek Szopka' />
+      <img itemprop='image' class='speaker' width='200' alt='Bartek Szopka' height='200' src='/speakers/images/bartek-szopka.jpeg' />
     </a>
     
     <div>
@@ -387,8 +471,8 @@
     <ul class='info'>
       <li>» <a href='https://www.google.com/maps/preview#!q=Poland / Poznań' target='_blank'>Poland / Poznań</a></li>
       
-      <li>» <a href='https://github.com/bartaz' itemprop='url' target='_blank'>Github</a></li>
-      <li>» <a href='https://twitter.com/bartaz' itemprop='url' target='_blank'>Twitter</a></li>
+      <li>» <a itemprop='url' href='https://github.com/bartaz' target='_blank'>Github</a></li>
+      <li>» <a itemprop='url' href='https://twitter.com/bartaz' target='_blank'>Twitter</a></li>
       
     </ul>
   </section>
@@ -402,11 +486,22 @@
 
 
 <style type='text/css'>
-.stage {
-  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x340&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CVancouver&visual_refresh=1") !important;
+.tags_speaker .stage {
+  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x340&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CVancouver&visual_refresh=1");
   background-repeat: repeat;
+  cursor: pointer;
 }
 </style>
+<script>
+(function() {
+var target = document.querySelector('.tags_speaker .stage')
+if (target) target.onclick = function(e) {
+  if (e.target == target) {
+    window.open('https://www.google.com/maps/preview#!q=Vancouver')
+  }
+}
+})();
+</script>
 
 
 <div itemscope='' itemtype='http://schema.org/Person'>
@@ -417,7 +512,7 @@
   <section class='description'>
     
     <a class='speaker_avatar' href='http://allenpike.com/' target='_blank'>
-      <img height='200' src='/speakers/images/allen-pike.jpg' class='speaker' width='200' itemprop='image' alt='Allen Pike' />
+      <img itemprop='image' class='speaker' width='200' alt='Allen Pike' height='200' src='/speakers/images/allen-pike.jpg' />
     </a>
     
     <div>
@@ -426,10 +521,10 @@
 
     <ul class='info'>
       <li>» <a href='https://www.google.com/maps/preview#!q=Vancouver' target='_blank'>Vancouver</a></li>
-      <li>» <a href='http://allenpike.com/' itemprop='url' target='_blank'>Website</a></li>
-      <li>» <a href='http://www.github.com/apike' itemprop='url' target='_blank'>Github</a></li>
-      <li>» <a href='https://twitter.com/apike' itemprop='url' target='_blank'>Twitter</a></li>
-      <li>» <a href='https://plus.google.com/115189793104525758622' itemprop='url' target='_blank'>Google+</a></li>
+      <li>» <a itemprop='url' href='http://allenpike.com/' target='_blank'>Website</a></li>
+      <li>» <a itemprop='url' href='http://www.github.com/apike' target='_blank'>Github</a></li>
+      <li>» <a itemprop='url' href='https://twitter.com/apike' target='_blank'>Twitter</a></li>
+      <li>» <a itemprop='url' href='https://plus.google.com/115189793104525758622' target='_blank'>Google+</a></li>
     </ul>
   </section>
 </div>

@@ -20,7 +20,7 @@
     <script type="text/javascript" src="//use.typekit.net/xnk7rre.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
-  <body>
+  <body class=" tags_speaker">
 
 
     <div class="top">
@@ -112,11 +112,22 @@
 
 
 <style type="text/css">
-.stage {
-  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x340&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CUSA%2C+Nashville&visual_refresh=1") !important;
+.tags_speaker .stage {
+  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x340&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CUSA%2C+Nashville&visual_refresh=1");
   background-repeat: repeat;
+  cursor: pointer;
 }
 </style>
+<script>
+(function() {
+var target = document.querySelector('.tags_speaker .stage')
+if (target) target.onclick = function(e) {
+  if (e.target == target) {
+    window.open('https://www.google.com/maps/preview#!q=USA%2C+Nashville')
+  }
+}
+})();
+</script>
 
 
 <div itemscope="" itemtype="http://schema.org/Person">
