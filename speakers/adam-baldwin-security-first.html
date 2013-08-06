@@ -108,7 +108,7 @@
         <div class="main_column">
          <style type='text/css'>
 .tags_speaker .stage {
-  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x163&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CUS%2C+Richland%2C+WA&visual_refresh=1");
+  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x163&scale=2&sensor=false&zoom=5&visual_refresh=1&markers=color:0xE10079%7CUS%2C+Richland%2C+WA");
   background-repeat: repeat;
   background-color: #B1D0FE;
   cursor: pointer;
@@ -116,21 +116,23 @@
 </style><script>
 (function() {
 var target = document.querySelector('.tags_speaker .stage')
-if (target) target.onclick = function(e) {
-  if (e.target == target) {
-    window.open('https://www.google.com/maps/preview#!q=US%2C+Richland%2C+WA')
+if (target) {
+  target.onclick = function(e) {
+    if (e.target == target) {
+      window.open('https://www.google.com/maps/preview#!q=US%2C+Richland%2C+WA')
+    }
   }
 }
 })();
-</script><div itemscope='' itemtype='http://schema.org/Person'>
+</script><div itemtype='http://schema.org/Person' itemscope=''>
   <header class='scrollTarget'>
     <h3><a href='/speakers/adam-baldwin-security-first.html'><span itemprop='name'>Adam Baldwin</span>: Security First</a></h3>
   </header>
 
   <section class='description'>
     
-    <a target='_blank' href='http://blog.liftsecurity.io' class='speaker_avatar'>
-      <img height='200' alt='Adam Baldwin' itemprop='image' class='speaker' src='/speakers/images/adam-baldwin.jpg' width='200' />
+    <a class='speaker_avatar' target='_blank' href='http://blog.liftsecurity.io'>
+      <img class='speaker' src='/speakers/images/adam-baldwin.jpg' itemprop='image' width='200' alt='Adam Baldwin' height='200' />
     </a>
     
     <div>

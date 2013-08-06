@@ -108,7 +108,7 @@
         <div class="main_column">
          <style type='text/css'>
 .tags_speaker .stage {
-  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x163&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CMountain+View%2C+CA%2C+USA&visual_refresh=1");
+  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x163&scale=2&sensor=false&zoom=5&visual_refresh=1&markers=color:0xE10079%7CMountain+View%2C+CA%2C+USA");
   background-repeat: repeat;
   background-color: #B1D0FE;
   cursor: pointer;
@@ -116,13 +116,15 @@
 </style><script>
 (function() {
 var target = document.querySelector('.tags_speaker .stage')
-if (target) target.onclick = function(e) {
-  if (e.target == target) {
-    window.open('https://www.google.com/maps/preview#!q=Mountain+View%2C+CA%2C+USA')
+if (target) {
+  target.onclick = function(e) {
+    if (e.target == target) {
+      window.open('https://www.google.com/maps/preview#!q=Mountain+View%2C+CA%2C+USA')
+    }
   }
 }
 })();
-</script><div itemscope='' itemtype='http://schema.org/Person'>
+</script><div itemtype='http://schema.org/Person' itemscope=''>
   <header class='scrollTarget'>
     <h3><a href='/speakers/loreena-lee-and-john-mccutchan-effectively-managing-memory-at-gmail-scale.html'><span itemprop='name'>Loreena Lee and John McCutchan</span>: Effectively Managing Memory At Gmail Scale</a></h3>
   </header>
@@ -131,10 +133,10 @@ if (target) target.onclick = function(e) {
 
     <div class='speaker_avatar'>
       <a target='_blank' href='https://plus.google.com/+LoreenaLee'>
-        <img height='200' class='speaker' alt='Loreena Lee' itemprop='image' src='/speakers/images/loreena-lee.jpg' width='200' />
+        <img class='speaker' src='/speakers/images/loreena-lee.jpg' itemprop='image' width='200' alt='Loreena Lee' height='200' />
       </a>
       <a target='_blank' href='https://plus.google.com/+JohnMcCutchan'>
-        <img height='200' class='speaker test' alt='John McCutchan' itemprop='image' src='/speakers/images/john-mccutchan.png' width='200' />
+        <img class='speaker test' src='/speakers/images/john-mccutchan.png' itemprop='image' width='200' alt='John McCutchan' height='200' />
       </a>
     </div>
     <div>

@@ -113,7 +113,7 @@
 
 <style type="text/css">
 .tags_speaker .stage {
-  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x163&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CVancouver&visual_refresh=1");
+  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x163&scale=2&sensor=false&zoom=5&visual_refresh=1&markers=color:0xE10079%7CVancouver");
   background-repeat: repeat;
   background-color: #B1D0FE;
   cursor: pointer;
@@ -122,9 +122,11 @@
 <script>
 (function() {
 var target = document.querySelector('.tags_speaker .stage')
-if (target) target.onclick = function(e) {
-  if (e.target == target) {
-    window.open('https://www.google.com/maps/preview#!q=Vancouver')
+if (target) {
+  target.onclick = function(e) {
+    if (e.target == target) {
+      window.open('https://www.google.com/maps/preview#!q=Vancouver')
+    }
   }
 }
 })();

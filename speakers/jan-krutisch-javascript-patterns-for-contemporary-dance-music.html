@@ -108,7 +108,7 @@
         <div class="main_column">
          <style type='text/css'>
 .tags_speaker .stage {
-  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x163&scale=2&sensor=false&zoom=5&markers=color:0xE10079%7CGermany%2FHamburg&visual_refresh=1");
+  background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=640x163&scale=2&sensor=false&zoom=5&visual_refresh=1&markers=color:0xE10079%7CGermany%2FHamburg");
   background-repeat: repeat;
   background-color: #B1D0FE;
   cursor: pointer;
@@ -116,21 +116,23 @@
 </style><script>
 (function() {
 var target = document.querySelector('.tags_speaker .stage')
-if (target) target.onclick = function(e) {
-  if (e.target == target) {
-    window.open('https://www.google.com/maps/preview#!q=Germany%2FHamburg')
+if (target) {
+  target.onclick = function(e) {
+    if (e.target == target) {
+      window.open('https://www.google.com/maps/preview#!q=Germany%2FHamburg')
+    }
   }
 }
 })();
-</script><div itemscope='' itemtype='http://schema.org/Person'>
+</script><div itemtype='http://schema.org/Person' itemscope=''>
   <header class='scrollTarget'>
     <h3><a href='/speakers/jan-krutisch-javascript-patterns-for-contemporary-dance-music.html'><span itemprop='name'>Jan Krutisch</span>: JavaScript Patterns For Contemporary Dance Music</a></h3>
   </header>
 
   <section class='description'>
     
-    <a target='_blank' href='http://jan.krutisch.de/' class='speaker_avatar'>
-      <img height='299' alt='Jan Krutisch' itemprop='image' class='speaker' src='/speakers/images/jan-krutisch.jpg' width='200' />
+    <a class='speaker_avatar' target='_blank' href='http://jan.krutisch.de/'>
+      <img class='speaker' src='/speakers/images/jan-krutisch.jpg' itemprop='image' width='200' alt='Jan Krutisch' height='299' />
     </a>
     
     <div>
